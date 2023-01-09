@@ -1,0 +1,259 @@
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1549849171-09f62448709e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&w=1000&q=80');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+li{
+    list-style: none;
+}
+
+.content-menu,
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content {
+    height: 100%;
+    color: white;
+}
+
+.content_menu {
+    width: 90%;
+    margin-right: 10%;
+    border-top: 1px solid #ccc;
+}
+
+.content-text {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.content-row {
+    color: white;
+    padding-right: 2rem;
+    padding-top: .3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-title {
+    color: #ccc;
+}
+
+.content-menu {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 0;
+    background: rgba(110, 110, 110, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    padding: 5em;
+    padding-top: 0;
+    padding-right: 0;
+}
+
+.search {
+    margin-right: 1rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #ccc;
+    color: #ccc;
+    outline: none;
+}
+
+.search::placeholder {
+    color: #ccc;
+}
+
+.text {
+    padding: 3rem;
+}
+
+.city {
+    display: flex;
+    align-items: center;
+}
+
+.icon-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.city-title {
+    font-weight: 600;
+    font-size: 20vh;
+    padding: 3rem;
+    padding-right: 2rem;
+}
+
+.name {
+    font-size: 7vh;
+    padding-right: 1rem;
+}
+
+.date {
+    font-size: 3.2vh;
+}
+
+.iconmenu {
+    padding-left: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.city-icon {
+    width: 10vh;
+}
+
+.submit {
+    background-color: rgb(169 205 224);
+    width: 10vh;
+    height: 10vh;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+.input_city {
+    outline: none;
+    caret-color: transparent;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.input-menu {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+@media (max-width: 1035px) {
+    .city-title {
+        font-size: 15vh;
+    }
+}
+
+@media (max-width: 960px) {
+    .city-title {
+        font-size: 10vh;
+    }
+
+    .name {
+        font-size: 5vh;
+    }
+
+    .date {
+        font-size: 2.5vh;
+    }
+}
+
+@media (max-width: 912px) {
+    .city {
+        width: 50%;
+        flex-direction: column;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+    .iconmenu {
+        padding: 0;
+        padding-top: 2vh;
+        margin-left: -2vh;
+    }
+}
+@media (max-width: 640px) {
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .content-menu{
+        height: auto;
+        padding: 0;
+        position: relative;
+        bottom: 0;
+    }
+    .input{
+        width: 100%;
+        padding-left: 10%;
+    }
+    .input-menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .content_menu{
+        width: 100%;
+        margin: 0;
+        padding: 10%;
+        padding-top: 0;
+    }
+    .city{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+    }
+    .city-title{
+        padding: 0;
+        font-size: 5vh;
+    }
+    .name{
+        font-size: 4vh;
+    }
+    .date{
+        font-size: 2vh;
+    }
+    .city-icon{
+        width: 6vh;
+    }
+    .icon-menu{
+        margin: 0 10px;
+        margin-left: 10px;
+    }
+    .iconmenu{
+        margin: 0 15px;
+        padding: 0;
+    }
+    .content{
+        padding: 0 3rem;
+    }
+    .text{
+        padding: 0;
+    }
+}
+@media (max-width: 420px) {
+    .text{
+        font-size: 2vh;
+    }
+    .content{
+        padding: 1rem;
+    }
+    .city{
+        margin: 20px 0;
+    }
+}
